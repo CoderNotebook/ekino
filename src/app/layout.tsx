@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { cn } from '@/utils/lib/tailwind'
+import Header from '@/components/layout/header'
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -16,9 +17,10 @@ export default function RootLayout({
         <html lang="en">
             <body
                 className={cn(
-                    'min-h-screen bg-background font-sans antialiased'
+                    'min-h-screen bg-foreground font-sans antialiased'
                 )}
             >
+                <Header />
                 <main>{children}</main>
             </body>
         </html>

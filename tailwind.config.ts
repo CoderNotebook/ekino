@@ -16,6 +16,13 @@ export default {
                     '2xl': '1200px',
                 },
             },
+            screens: {
+                xl: '1200px', //  od 1200 w gore to dziala
+                // jakby ktos chcial do max-width: 1119px
+                // toXl: {
+                //     max: '1119px',
+                // },
+            },
             colors: {
                 green: 'var(--green',
                 silver: 'var(--silver)',
